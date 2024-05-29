@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/78e312a4ea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/mine.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI UX Designer</p>
+                <h1>Hi,I'm <span>Nitesh Singh</span><br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------About--------- -->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/aboutme.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="Sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, in sit! Tempora voluptates, unde quo nesciunt fuga atque! Mollitia earum fugit, commodi facilis consequatur et magnam ipsum! Iusto, tenetur id!</p>
+                     
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Devlopement</span><br>Web app Devlopement</li>
+                            <li><span>App Devlopement</span><br>Building Android/ios</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2022-2023</span><br>Team Lead on Smart-Genset project</li>
+                            <li><span>2021-2022</span><br>Make a obstacle detection car</li>
+                            <li><span>2022</span><br>Build a Machine Learning Project</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2024-Current</span><br>GLA University</li>
+                            <li><span>2021</span><br>InterMediate</li>
+                            <li><span>2019</span><br>HighSchool</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- --------------services--------------- -->
+<div id="Services">
+    <div class="container">
+        <h1 class="Sub-title">My Services</h1>
+        <div class="services_list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae incidunt explicabo totam, odit magnam voluptatem ea quibusdam libero saepe, molestiae neque harum dolores et. Accusantium, architecto ipsa. Consequuntur, dolorem laborum.</p>
+                <a href="#">learn more</a>
+            </div> 
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae incidunt explicabo totam, odit magnam voluptatem ea quibusdam libero saepe, molestiae neque harum dolores et. Accusantium, architecto ipsa. Consequuntur, dolorem laborum.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae incidunt explicabo totam, odit magnam voluptatem ea quibusdam libero saepe, molestiae neque harum dolores et. Accusantium, architecto ipsa. Consequuntur, dolorem laborum.</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+<!-- -------------------portfolio----------- -->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="Sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/AI@.png" >
+                <div class="layer">
+                    <h3>Machine-Learning</h3>
+                    <p>This project tell u about the health issue of any patient.</p>
+                    <a href="https://github.com/neeteshkumar21/Heart_Disease1.git"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/weather2.png" >
+                <div class="layer">
+                    <h3>Weather-Site</h3>
+                    <p>This project tell about the Weather change in about anyplace.</p>
+                    <a href="https://github.com/neeteshkumar21/DynamicWeather_site.git"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+</div>
+</div>
+
+<!-- -------------contact------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="Sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>nitesh871@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i>7906725847</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100073221833575"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/nitesh9119_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="niteshkashyap871@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <a href="Images/Neetesh_Resume[1][1].pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>This Portfolio is made <i class="fa-solid fa-marker"></i>by Nitesh Singh !</p>
+    </div>
+</div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx5YfSm07_0b6nZxkzWLoMXH4Wn1Zn3fXJEmnfahPbkeGZkHKjpvyVi4q0JWoRTChOB/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message has been sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+</body>
+</html>
